@@ -1,0 +1,24 @@
+print("Welcome to guess game!, you will have total 9 attempts left\nGood luck!")
+count_1 = 8
+count_2 = 1
+while (True):
+    n = int(input("Enter your guess:\n"))
+    if n < 18:
+        print("Input is lesser and you left with", str(count1),"attempts")
+        count1 = count1 - 1
+        count2 = count2 + 1
+        if count1 == -1 :
+            print("Maximum number reached, Game over!")
+            break
+        continue
+    elif n > 18:
+        print("Input is greater and you left with", str(count1),"attempts")
+        count1 = count1 - 1
+        count2 = count2 + 1
+        if count1 == -1:
+            print("Maximum number reached, Game over!")
+            break
+        continue
+    elif n == 18:
+        print("You guessed it correctly in", str(count2), "attempts, You won!")
+        break
